@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Lik=nk web demo https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm# -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/grid.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="./assets/fonts/font-themify/themify-icons.css">
+
+        <title>Document</title>
+    </head>
+
+    <body>
+        
+        <div class="app">
+            <div id="overlay"></div>
+            <div class="grid">
+                <div class="row no-gutters">
+                    <div class="col l-3 m-0 c-0 sidebar__container" style="background: var(--white-color);">
+                        <nav class="sidebar"> 
+                            <div class="personal">
+                                <img src="./assets/img/avatar.jpg" alt="avatar" class="avatar"> 
+                                <ul class="personal-info hidden-on-mb-tablet">
+                                    <li class="personal-info-item">Liễu Minh Vương</li>
+                                    <li class="personal-info-item">1/1/2002</li>
+                                    <li class="personal-info-item">Web designer</li>
+                                </ul> 
+                                <button class="sidebar-close-btn btn">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+
+                            <h3 class="sidebar-heading">PORTFOLIO</h3>
+    
+                            <ul class="navbar">
+                                <li class="navbar__item navbar__item--active">
+                                    <a href="#portfolio" class="navbar__item--link">
+                                        <i class="navbar__item--icon fas fa-th-large"></i>
+                                        Portfolio
+                                    </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#about" class="navbar__item--link">
+                                        <i class="navbar__item--icon fas fa-user"></i>
+                                        About
+                                    </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#contact" class="navbar__item--link">
+                                        <i class="navbar__item--icon fas fa-envelope"></i>
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="social-apps">
+                                <li class="social-app--item">
+                                    <a href="">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </a>
+                                </li>
+                                <li class="social-app--item">
+                                    <a href="">
+                                        <i class="fab fa-instagram-square"></i>
+                                    </a>
+                                </li>
+                                <li class="social-app--item">
+                                    <a href="">
+                                        <i class="fab fa-twitter-square"></i>
+                                    </a>
+                                </li>
+                                <li class="social-app--item">
+                                    <a href="">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li class="social-app--item">
+                                    <a href="">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div> 
+    
+                    <div class="col l-9 m-12 c-12" style="background: #f1f1f1;margin-left: auto;">
+                        <div class="main-content">
+                            <div id="portfolio">
+                                <header class="header">
+                                    <div class="mb-tablet__navbar">
+                                        <button class="mb-tablet__option--btn btn">
+                                            <i class="fas fa-bars"></i> 
+                                        </button>
+                                        <img src="./assets/img/avatar.jpg" alt="" class="mb-tablet__navbar--avatar">
+                                    </div>
+                                    <h3 class="header__title">My Portfolio</h3>
+                                    <div class="home-filter">
+                                        <span class="home-filter-title">Filter: </span>
+                                        <ul class="home-filter-bar">
+                                            <li class="home-filter-bar--item home-filter-bar--active">
+                                                <button class="home-filter-bar--btn btn">ALL</button>
+                                            </li>
+                                            <li class="home-filter-bar--item">
+                                                <button class="home-filter-bar--btn btn">
+                                                    <i class="far fa-gem"></i>
+                                                    Design
+                                                </button>
+                                            </li>
+                                            <li class="home-filter-bar--item">
+                                                <button class="home-filter-bar--btn btn">
+                                                    <i class="far fa-image"></i>
+                                                    Photos
+                                                </button>
+                                            </li>
+                                            <li class="home-filter-bar--item">
+                                                <button class="home-filter-bar--btn btn">
+                                                    <i class="fas fa-map-pin"></i>
+                                                    Art
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </header>  
+
+                                <div class="grid">
+                                    <div class="row sm-gutter list-images">
+                                        <div class="col l-4 m-4 c-12 mt-8 album-container">
+                                            <img src="./assets/img/mountains.jpg" alt="" style="width: 100%;">
+                                            <div class="album-info">
+                                                <h3 class="album-info__heading">Lorem Ipsum</h3>
+                                                <p class="album-info__description">
+                                                    Praesent tincidunt sed tellus ut rutrum.
+                                                     Sed vitae justo condimentum, porta lectus vitae,
+                                                      ultricies congue gravida diam non fringilla.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col l-4 m-4 c-12 mt-8 album-container">
+                                            <img src="./assets/img/p3.jpg" alt="" style="width: 100%;">
+                                            <div class="album-info">
+                                                <h3 class="album-info__heading">Lorem Ipsum</h3>
+                                                <p class="album-info__description">
+                                                    Praesent tincidunt sed tellus ut rutrum.
+                                                     Sed vitae justo condimentum, porta lectus vitae,
+                                                      ultricies congue gravida diam non fringilla.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col l-4 m-4 c-12 mt-8 album-container">
+                                            <img src="./assets/img/lights.jpg" alt="" style="width: 100%;">
+                                            <div class="album-info">
+                                                <h3 class="album-info__heading">Lorem Ipsum</h3>
+                                                <p class="album-info__description">
+                                                    Praesent tincidunt sed tellus ut rutrum.
+                                                     Sed vitae justo condimentum, porta lectus vitae,
+                                                      ultricies congue gravida diam non fringilla.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col l-4 m-4 c-12 mt-8 album-container">
+                                            <img src="./assets/img/nature.jpg" alt="" style="width: 100%;">
+                                            <div class="album-info">
+                                                <h3 class="album-info__heading">Lorem Ipsum</h3>
+                                                <p class="album-info__description">
+                                                    Praesent tincidunt sed tellus ut rutrum.
+                                                     Sed vitae justo condimentum, porta lectus vitae,
+                                                      ultricies congue gravida diam non fringilla.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col l-4 m-4 c-12 mt-8 album-container">
+                                            <img src="./assets/img/p1.jpg" alt="" style="width: 100%;">
+                                            <div class="album-info">
+                                                <h3 class="album-info__heading">Lorem Ipsum</h3>
+                                                <p class="album-info__description">
+                                                    Praesent tincidunt sed tellus ut rutrum.
+                                                     Sed vitae justo condimentum, porta lectus vitae,
+                                                      ultricies congue gravida diam non fringilla.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col l-4 m-4 c-12 mt-8 album-container">
+                                            <img src="./assets/img/p2.jpg" alt="" style="width: 100%;">
+                                            <div class="album-info">
+                                                <h3 class="album-info__heading">Lorem Ipsum</h3>
+                                                <p class="album-info__description">
+                                                    Praesent tincidunt sed tellus ut rutrum.
+                                                     Sed vitae justo condimentum, porta lectus vitae,
+                                                      ultricies congue gravida diam non fringilla.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pagenation">
+                                        <button class="pagenation-btn btn">
+                                            <i class="ti-angle-double-left"></i>
+                                        </button>
+                                        <button class="pagenation-btn btn pagenation-btn--active">1</button>
+                                        <button class="pagenation-btn btn">2</button>
+                                        <button class="pagenation-btn btn">3</button>
+                                        <button class="pagenation-btn btn">4</button>
+                                        <button class="pagenation-btn btn">
+                                            <i class="ti-angle-double-right"></i>
+                                        </button>
+                                    </div> 
+                                </div>
+                            </div>
+
+                            <div id="about" class="grid"> 
+                                <div class="row sm-gutter">
+                                    <div class="col l-6 m-12 c-12" >
+                                        <img src="./assets/img/download.jpg" alt="" class="about-img">
+                                    </div>
+
+                                    <div class="col l-6 m-12 c-12">
+                                        <img src="./assets/img/about.jpg" alt="" class="about-img">
+                                    </div>
+                                </div> 
+
+
+                                <h3 class="about__heading">About me</h3>
+                                <p class="about__description">
+                                    Just me, myself and I, exploring the universe of unknownment. 
+                                    I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                                </p> 
+
+                                <div class="about-skills">
+                                    <h3 class="about-skill__heading">Technical Skills</h3>
+                                    <ul class="skills-list">
+                                        <li class="skill-item">
+                                            <p class="skill-name">Photography</p>
+                                            <div class="skill-level">
+                                                <div class="fluent-bar" style="width: 95%;"></div>
+                                                <span class="percen">95%</span> 
+                                            </div>
+                                        </li>
+
+                                        <li class="skill-item">
+                                            <p class="skill-name">Web design</p>
+                                            <div class="skill-level">
+                                                <div class="fluent-bar" style="width: 85%;"></div>
+                                                <span class="percen">85%</span> 
+                                            </div>
+                                        </li>
+
+                                        <li class="skill-item">
+                                            <p class="skill-name">Photoshop</p>
+                                            <div class="skill-level">
+                                                <div class="fluent-bar" style="width: 80%;"></div>
+                                                <span class="percen">80%</span> 
+                                            </div>
+                                        </li>
+                                    </ul> 
+
+                                    <button class="download-resume-btn btn">
+                                        <i class="fas fa-download"></i>
+                                        Download resume
+                                    </button>
+                                </div> 
+
+                                <div class="about-charge">
+                                    <h3 class="about-charge__heading">How much I charge</h3>
+                                    <div class="row sm-gutter">
+                                        <div class="col l-4 m-4 c-12 about-charge--container">
+                                            <div class="charge-level">Basic</div>
+                                            <ul class="list-received">
+                                                <li class="received-item">Web design</li>
+                                                <li class="received-item">Photography</li>
+                                                <li class="received-item">1GB storage</li>
+                                                <li class="received-item">Mail support</li>
+                                            </ul>
+
+                                            <div class="cost-for-hire">
+                                                <div class="cost">$ 10</div>
+                                                <span>per month</span>
+                                            </div>
+
+                                            <div class="about-char__sign-up">
+                                                <button class="sign-up-btn btn">
+                                                    Sign up
+                                                </button>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="col l-4 m-4 c-12 about-charge--container">
+                                            <div class="charge-level">Pro</div>
+                                            <ul class="list-received">
+                                                <li class="received-item">Web design</li>
+                                                <li class="received-item">Photography</li>
+                                                <li class="received-item">50GB storage</li>
+                                                <li class="received-item">Endless support</li>
+                                            </ul>
+
+                                            <div class="cost-for-hire">
+                                                <div class="cost">$ 25</div>
+                                                <span>per month</span>
+                                            </div> 
+
+                                            <div class="about-char__sign-up">
+                                                <button class="sign-up-btn btn">
+                                                    Sign up
+                                                </button>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="col l-4 m-4 c-12 about-charge--container">
+                                            <div class="charge-level">Premium</div>
+                                            <ul class="list-received">
+                                                <li class="received-item">Web design</li>
+                                                <li class="received-item">Photography</li>
+                                                <li class="received-item">Unlimited storage</li>
+                                                <li class="received-item">Endless support</li>
+                                            </ul>
+
+                                            <div class="cost-for-hire">
+                                                <div class="cost">$ 35</div>
+                                                <span>per month</span>
+                                            </div> 
+
+                                            <div class="about-char__sign-up">
+                                                <button class="sign-up-btn btn">
+                                                    Sign up
+                                                </button>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div> 
+
+                            </div>
+
+                            <div id="contact">
+                                <div class="contact__heading">Contact me</div>
+                                <div class="row no-gutters contact-info__container">
+                                    <div class="col l-4 m-4 c-12 contact-info">
+                                        <i class="fas fa-envelope"></i>
+                                        <span class="contact-info__text">minhvuonglht@gmail.com</span>
+                                    </div>
+
+                                    <div class="col l-4 m-4 c-12 contact-info">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span class="contact-info__text">Lịch Hội Thượng- Trần Đề - Sóc Trăng</span>
+                                    </div>
+
+                                    <div class="col l-4 m-4 c-12 contact-info">
+                                        <i class="fas fa-phone-alt"></i>
+                                        <span class="contact-info__text">0397638114</span>
+                                    </div>
+                                </div>
+
+                                <form action="" class="contact-form">
+                                    <input type="text" placeholder="Name" required class="form-control">
+                                    <input type="email" placeholder="Email" required class="form-control">
+                                    <input type="text"placeholder="Message" required class="form-control">
+                                    <button class="contact__send-btn btn">
+                                        <i class="fab fa-telegram-plane"></i>
+                                        Send message
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div class="footer">
+                                <div class="row sm-gutter">
+                                    <div class="col l-4 m-4 c-12">
+                                        <h3 class="footer__heading">FOOTER</h3>
+                                        <p class="footer__description">
+                                            Praesent tincidunt sed tellus ut rutrum. 
+                                            Sed vitae justo condimentum, porta lectus vitae, 
+                                            ultricies congue gravida diam non fringilla.
+                                        </p>
+                                    </div>
+                                    <div class="col l-4 m-4 c-12">
+                                        <h3 class="footer__heading">BLOG POSTS</h3>
+                                        <div class="footer__blog">
+                                            <img src="./assets/img/blog1.jpg" alt="" class="blog-img">
+                                            <div class="blog-info">
+                                                <h4 class="blog-heading">Lorem</h4>
+                                                <p class="blog-description">Sed mattis nunc</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="footer__blog">
+                                            <img src="./assets/img/blog2.jpg" alt="" class="blog-img">
+                                            <div class="blog-info">
+                                                <h4 class="blog-heading">Lorem</h4>
+                                                <p class="blog-description">Sed mattis nunc</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-4 c-12">
+                                        <h3 class="footer__heading">POPULARS TAG</h3>
+                                        <div class="populars-tag__container">
+                                            <button class="tag-btn btn ">HTML</button>
+                                            <button class="tag-btn btn">Javascrip</button>
+                                            <button class="tag-btn btn">CSS</button>
+                                            <button class="tag-btn btn">NodeJS</button>
+                                            <button class="tag-btn btn">ReactJS</button>
+                                            <button class="tag-btn btn">CSS</button>
+                                            <button class="tag-btn--active tag-btn btn">Javascrip</button>
+                                            <button class="tag-btn btn">ReactJS</button>
+                                            <button class="tag-btn btn">CSS</button>
+                                            <button class="tag-btn btn">Javascrip</button>
+                                            <button class="tag-btn btn">HTML</button>
+                                            <button class="tag-btn btn">NodeJS</button>
+                                            <button class="tag-btn btn">HTML</button>
+                                            <button class="tag-btn btn">NodeJS</button>
+                                            <button class="tag-btn btn">ReactJS</button>
+                                            <button class="tag-btn btn">a</button>
+                                            <button class="tag-btn btn">a</button>
+                                            <button class="tag-btn btn">a</button>
+                                            <button class="tag-btn btn">a</button>
+                                            <button class="tag-btn btn">a</button>
+                                            <button class="tag-btn btn">a</button>
+                                            <button class="tag-btn btn">a</button>
+                                            <button class="tag-btn btn">a</button>
+                                            <button class="tag-btn btn">a</button>
+                                            <button class="tag-btn btn">a</button>
+                                            <button class="tag-btn btn">a</button>
+                                            <button class="tag-btn btn">a</button>
+                                            <button class="tag-btn btn">a</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        // =======================  open and close sidebar ===================
+        const openMenuBTN = document.querySelector('.mb-tablet__option--btn') ; 
+        const closeMenuBTN = document.querySelector('.sidebar-close-btn') ; 
+       
+        function openSideBar() {
+            var sidebarContainer = document.querySelector('.sidebar__container') ; 
+            sidebarContainer.classList.add('js-open-sidebar') ; 
+            document.querySelector('#overlay').style.display = "block" ; 
+        }
+
+        function closeSideBar(event) {
+            var sidebarContainer = document.querySelector('.sidebar__container') ; 
+            sidebarContainer.classList.remove('js-open-sidebar') ; 
+            document.querySelector('#overlay').style.display = "none" ; 
+        }
+
+        openMenuBTN.addEventListener('click',openSideBar)  ;
+        closeMenuBTN.addEventListener('click', closeSideBar) ;  
+        document.querySelector('#overlay').onclick = closeSideBar ; 
+ 
+
+        //====================================================================
+
+        
+        const homeFilters = document.querySelectorAll('.home-filter-bar--item') ;  
+
+        for (const homeFiter of homeFilters) {
+            homeFiter.addEventListener('click', function() {
+                const homeFilterActive = document.querySelector('.home-filter-bar--active') ; 
+                homeFilterActive.classList.remove('home-filter-bar--active')
+                homeFiter.classList.add('home-filter-bar--active') ;
+            })
+        }
+
+
+
+
+    </script>
+</html>
